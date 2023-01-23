@@ -7,8 +7,13 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Vehicle
 {
-    internal class GasCar : SmallCommercialMotorVehicle, IGasVehicle
+    public class GasCar : SmallCommercialMotorVehicle, IGasVehicle
     {
+        public GasCar(decimal intialFuelPercentage) : base(intialFuelPercentage)
+        {
+            RefuelToPercentage(intialFuelPercentage);
+        }
+
         public decimal MaxGasCapacityL { get; } = 30.0M;
 
         public decimal CurrentGasCapacityL { get; set; } = 0.0M;

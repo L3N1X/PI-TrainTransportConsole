@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Train.TrainFactory
 {
-    internal static class TrainFactory
+    public static class TrainFactory
     {
         public static T CreateTrain<T>() where T : AbstractTrain, new()
         {

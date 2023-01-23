@@ -60,6 +60,7 @@
     <Compile Include="Model\Vehicle\GasVan.cs" />
     <Compile Include="Model\Vehicle\LargeCommercialMotorVehicle.cs" />
     <Compile Include="Model\Vehicle\SmallCommercialMotorVehicle.cs" />
+    <Compile Include="Model\Worker\Worker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

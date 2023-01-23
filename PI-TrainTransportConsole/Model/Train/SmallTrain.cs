@@ -8,16 +8,21 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Train
 {
-    internal class SmallTrain : AbstractTrain, ICommercialVehicleAddable<SmallCommercialMotorVehicle>
+    public class SmallTrain : AbstractTrain, ICommercialVehicleAddable<SmallCommercialMotorVehicle>
     {
         public override int VehicleCapacity { get; } = 8;
 
-        public bool Add(SmallCommercialMotorVehicle commercialVehicle)
+        public bool Embark(SmallCommercialMotorVehicle commercialVehicle)
         {
             if (this.ChargableVehicles.Count == VehicleCapacity)
                 return false;
             this.ChargableVehicles.Add(commercialVehicle);
             return true;
+        }
+
+        public override bool MaxCapacity()
+        {
+            return this.ChargableVehicles.Count == VehicleCapacity;
         }
     }
 }

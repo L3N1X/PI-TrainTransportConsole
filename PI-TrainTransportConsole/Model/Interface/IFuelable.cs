@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Interface
 {
-    internal interface IFuelable
+    public interface IFuelable
     {
         decimal FuelPercentage();
         void RefuelToPercentage(decimal percentageAfterFuel);

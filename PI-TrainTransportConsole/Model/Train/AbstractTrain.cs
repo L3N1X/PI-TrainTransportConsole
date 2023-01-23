@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Train
 {
-    internal abstract class AbstractTrain
+    public abstract class AbstractTrain
     {
         public abstract int VehicleCapacity { get; }
-        public ICollection<ITransportChargable> ChargableVehicles { get; set; }
+        public ICollection<ITransportChargable> ChargableVehicles { get; set; } = new List<ITransportChargable>();
+        public abstract bool MaxCapacity();
     }
 }

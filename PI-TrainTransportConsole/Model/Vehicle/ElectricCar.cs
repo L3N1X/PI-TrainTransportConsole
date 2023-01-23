@@ -7,8 +7,13 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Vehicle
 {
-    internal class ElectricCar : SmallCommercialMotorVehicle, IElectricVehicle
+    public class ElectricCar : SmallCommercialMotorVehicle, IElectricVehicle
     {
+        public ElectricCar(decimal intialFuelPercentage) : base(intialFuelPercentage)
+        {
+            RefuelToPercentage(intialFuelPercentage);
+        }
+
         public decimal MaxBatteryCapacityAh => 4.8M;
 
         public decimal CurrentBatteryCapacityAh { get; set; } = 0.0M;

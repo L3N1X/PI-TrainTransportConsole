@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PI-TrainTransportConsole", "PI-TrainTransportConsole\PI-TrainTransportConsole.csproj", "{581732EA-A834-45C0-82E6-D77F7FC1E0A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PI-UnitTests", "PI-UnitTests\PI-UnitTests.csproj", "{C3EC50C3-BB41-430B-B19C-0FB8E8E03565}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{581732EA-A834-45C0-82E6-D77F7FC1E0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{581732EA-A834-45C0-82E6-D77F7FC1E0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{581732EA-A834-45C0-82E6-D77F7FC1E0A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3EC50C3-BB41-430B-B19C-0FB8E8E03565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EC50C3-BB41-430B-B19C-0FB8E8E03565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EC50C3-BB41-430B-B19C-0FB8E8E03565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EC50C3-BB41-430B-B19C-0FB8E8E03565}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
