@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Interface
 {
-    internal interface ITransportChargable
+    public interface ITransportChargable
     {
         decimal CalculateCharge();
     }

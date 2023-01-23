@@ -7,10 +7,14 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Vehicle
 {
-    internal abstract class SmallCommercialMotorVehicle : CommercialVehicle, IFuelable
+    public abstract class SmallCommercialMotorVehicle : CommercialVehicle, IFuelable
     {
         public abstract decimal FuelPercentage();
 
         public abstract void RefuelToPercentage(decimal percentageAfterFuel);
+        public SmallCommercialMotorVehicle(decimal intialFuelPercentage)
+        {
+
+        }
     }
 }

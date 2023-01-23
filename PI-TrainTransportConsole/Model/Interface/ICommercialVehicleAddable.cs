@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Interface
 {
-    internal interface ICommercialVehicleAddable<T> where T : CommercialVehicle
+    public interface ICommercialVehicleAddable<T> where T : CommercialVehicle
     {
-        bool Add(T commercialVehicle);
+        bool Embark(T commercialVehicle);
     }
 }

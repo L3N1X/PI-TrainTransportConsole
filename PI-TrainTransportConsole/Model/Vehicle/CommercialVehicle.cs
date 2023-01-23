@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Vehicle
 {
-    internal abstract class CommercialVehicle : ITransportChargable
+    public abstract class CommercialVehicle : ITransportChargable
     {
         public abstract decimal CalculateCharge();
     }

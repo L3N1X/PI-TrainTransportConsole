@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Interface
 {
-    internal interface IGasVehicle
+    public interface IGasVehicle
     {
         decimal MaxGasCapacityL { get; }
         decimal CurrentGasCapacityL { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PI_TrainTransportConsole.Model.Interface
 {
-    internal interface IElectricVehicle
+    public interface IElectricVehicle
     {
         decimal MaxBatteryCapacityAh { get; }
         decimal CurrentBatteryCapacityAh { get; }
